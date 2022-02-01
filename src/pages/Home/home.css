@@ -1,0 +1,93 @@
+.conteiner-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo span{
+    margin-bottom: 24px;
+}
+
+.area-input{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: movimento 2s;
+}
+
+/* Animação subindo area imput*/
+@keyframes movimento{
+    from{
+        transform: translateY(90px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.area-input div{
+    width: 100%;
+    height: 46px;
+    background-color: rgb(255,255,255, 0.15);
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.area-input svg{
+    margin: 0  8px;
+}
+
+.area-input input{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    height: 46px;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.area-input  input::placeholder{
+    color: rgb(255,255,255, 0.80);
+}
+
+.area-input button{
+    width: 100%;
+    height: 46px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 20px;
+    color: #132742;
+    font-weight: bolder;
+    margin-top: 8px;
+    transition: transform 0.7s;
+}
+
+.area-input button:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 650px){
+    .logo img{
+        width: 95px;
+    }
+    .logo h1{
+        font-size: 40px;
+    }
+    .area-input{
+        width: 70%;
+    }
+    .logo span{
+        font-size: 15px;
+    }
+}

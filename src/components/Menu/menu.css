@@ -1,0 +1,25 @@
+.Menu{
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    font-weight: bold;
+    display: flex;
+}
+
+.Menu a{
+    text-decoration: none;
+}
+
+.Social{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.Menu-item{
+    color: #000;
+    background-color: #FFF;
+    padding: 12px 12px;
+    border-radius: 6px;
+    margin-right: 2px;
+}
