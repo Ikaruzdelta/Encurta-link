@@ -18,17 +18,17 @@
 }
 
 .area-input{
-    width: 540px;
+    width: 540px; /* Aqui é determinado a largura*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: movimento 2s;
+    animation: movimento 2s; /*Tempo que a animação vai ter*/
 }
 
 /* Animação subindo area imput*/
 @keyframes movimento{
     from{
-        transform: translateY(90px);
+        transform: translateY(90px); /*Vai de um ponto ao outro*/
     }
     to{
         transform: translateY(0px);
@@ -36,10 +36,10 @@
 }
 
 .area-input div{
-    width: 100%;
-    height: 46px;
-    background-color: rgb(255,255,255, 0.15);
-    display: flex;
+    width: 100%; /* Determina a largura*/
+    height: 46px; /*Aqui determina a altura*/
+    background-color: rgb(255,255,255, 0.15); /*Cor e opacidade*/
+    display: flex; /* Mantem o Layout flexivel*/
     align-items: center;
     border-radius: 6px;
 }
@@ -64,19 +64,20 @@
 .area-input button{
     width: 100%;
     height: 46px;
-    border-radius: 6px;
-    border: 0;
-    font-size: 20px;
-    color: #132742;
-    font-weight: bolder;
-    margin-top: 8px;
-    transition: transform 0.7s;
+    border-radius: 6px; /*Determina a curvatura*/
+    border: 0; /*Determina o tamanho da borda*/
+    font-size: 20px; /*Tamanho da fonte*/
+    color: #132742; /*Cor da letra*/
+    font-weight: bolder; /*Fonte da letra*/
+    margin-top: 8px; /*O espaçamento de cima pra baixo*/
+    transition: transform 0.7s; /*Efeito realizado*/
 }
 
 .area-input button:hover{
     transform: scale(1.05);
 }
 
+/*Deixa o site responsivel*/
 @media (max-width: 650px){
     .logo img{
         width: 95px;
