@@ -1,0 +1,60 @@
+.modal-container{
+    position: absolute;
+    bottom: 18px;
+    background-color: #FFF;
+    padding: 14px;
+    width: 540px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    animation: movimento 1s;
+}
+
+@keyframes movimento{
+    from{
+        transform: translateY(90px); /*Vai de um ponto ao outro*/
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.modal-header{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.modal-header button{
+    border: 0;
+    background: transparent;
+
+}
+
+.modal-container span{
+    color: black;
+    margin: 10px 0;
+    color: #A7A7A7;
+    font-size: 12px;
+}
+
+.modal-link{
+    background-color: #172742;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+    border-radius: 6px;
+    border: 0;
+    height: 38px;
+}
+
+@media (max-width: 735px)
+{
+    .modal-container{
+        width: 70%;
+    }
+}
