@@ -2,9 +2,9 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center; /*Centraliza*/
+    align-items: center; /*Deixa centralizado*/
+    flex-direction: column; /*Em ordem de cima para baixo*/
 }
 
 .logo{

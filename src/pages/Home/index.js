@@ -1,6 +1,5 @@
 import { FiLink} from 'react-icons/fi';
 import './home.css';
-import Menu from '../../components/Menu'
 import {useState} from 'react';
 import LinkItem from '../../components/LinkItem';
 import api from '../../services/api';
@@ -44,7 +43,6 @@ export default function Home(){
             </div>
             <button onClick={encurta}>Encurtar Link</button>
         </div>
-        <Menu/>
         {showModal && (
         <LinkItem
             closeModal = {() => setShowModal(false)}
